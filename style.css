@@ -13,7 +13,6 @@ body{
     "dash mid"
     "dash main";
 
-
     font-family: "Arial Black", Gadget, sans-serif;
 font-size: 16px;
 letter-spacing: -0.8px;
@@ -24,7 +23,7 @@ text-decoration: none;
 font-style: normal;
 font-variant: normal;
 text-transform: capitalize;
-max-width: 1700px;
+max-width: 1500px;
 max-height: 900px;
 margin: auto;
 }
@@ -94,6 +93,7 @@ li{
     gap: 12px;
     margin-left: 1.5rem;
     margin-bottom: 1rem;
+    font-size: 1.25rem;
     
 }
 ul{
@@ -102,7 +102,10 @@ ul{
 }
 
 .sideBar{
-background-color: khaki;
+background: #FFFFFF;
+background: -moz-linear-gradient(top, #FFFFFF 0%, #CB953C 60%, #757575 100%);
+background: -webkit-linear-gradient(top, #FFFFFF 0%, #CB953C 60%, #757575 100%);
+background: linear-gradient(to bottom, #FFFFFF 0%, #CB953C 60%, #757575 100%);
 grid-area: dash;
 }
 
@@ -132,13 +135,17 @@ margin-right: 6rem;
     gap: 1rem;
     margin-left: 2rem;
 }
-.searchBar{
+#searchBar{
     width: 24vw;
     border-radius: 20px;
     border: none;
-    background-color: rgba(206, 206, 206, 0.705);
+    background-color: rgba(216, 215, 215, 0.432);
     min-height: 28px;
     width: 30vw;
+    caret-color: #0e0d0d;
+    caret-shape: bar;
+    padding-left: 10px;
+    
 }
 .header-bottom{
     background-color: white;
@@ -169,7 +176,7 @@ padding: 10px; border-radius: 25px;
 font-family: Georgia, serif; font-weight: normal; 
 text-decoration: none; font-style: normal; font-variant: normal; 
 text-transform: none; 
-background-image: radial-gradient(rgb(255, 255, 255) 0%, rgb(203, 149, 60) 59%, rgb(117, 117, 117) 100%); box-shadow: rgba(0, 0, 0, 0) 5px 5px 15px 5px; 
+background-image: radial-gradient(#ffffff 0%, #cb953c 59%, #757575 100%); box-shadow: rgba(0, 0, 0, 0) 5px 5px 15px 5px; 
 border: 0px solid rgb(28, 110, 164); display: inline-block;
 max-height: 40px;
 min-width: 100px;
@@ -191,7 +198,7 @@ background: rgb(117,117,117); }
 
 .main{
     
-    background-color: grey;
+    background-color: rgba(216, 215, 215, 0.342);
     grid-area: main;
       
 }
@@ -205,9 +212,8 @@ background: rgb(117,117,117); }
     background-color: white;
     max-height: 250px;
     border-radius: 8px;
-    border-left: 17px double rgba(240,230,140,0.92);
-    
-    
+    border-left: 17px double #CB953C;
+
     
 }
 
@@ -226,19 +232,18 @@ padding: 2rem;
     
     background: white;
     margin: 30px;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 40px;
     font-size: 16px;
-    margin-top: 0;
-    
+    margin-top: 0;  
 
 }
 .trend{
     
-    background-color: khaki;
+    background-color: white;
     margin: 30px;
     margin-top: 0;
-    border-radius: 20px;
+    border-radius: 10px;
     height: 21rem;
     align-content: center;
     
@@ -247,8 +252,14 @@ padding: 2rem;
 
 .trendContent{
     display: flex;
-    gap:10px;
-    justify-content: center;
+    gap:15px;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-left: 2rem;
+}
+.textSide{
+    width: 150px;
+    overflow: hidden;
 
 }
 
@@ -264,10 +275,10 @@ padding: 2rem;
     gap: 32px;
     margin-left: 32px;
     margin-bottom: 32px;
-      
+    
 }
 .mainContent {
-
+    
     display: flex;
 }
 
@@ -296,10 +307,7 @@ padding-bottom: 20px;
 .textTwo,
 .textThree{
     padding-top: 20px;
+
 }
-
-
-
-
 
 
