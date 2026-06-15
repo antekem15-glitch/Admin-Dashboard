@@ -6,7 +6,7 @@
 
 body{
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 250px 1fr;
     grid-template-rows: auto 1fr;
     grid-template-areas: 
     "dash nav"
@@ -210,22 +210,35 @@ background: rgb(117,117,117); }
 .box{
     
     background-color: white;
-    max-height: 250px;
     border-radius: 8px;
     border-left: 17px double #CB953C;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* wichtig: verteilt den Inhalt */
+    min-height: 200px;
 
     
 }
 
-.boxContent{
-display: flex;
-flex-direction: column;
-margin: 2rem 0;
-font-size: 1rem;
-justify-content: space-between;
-min-height: 2rem;
-padding: 2rem;
+.boxContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Inhalt oben und unten */
+    height: 100%; /* nimmt volle Höhe der Box */
+    padding: 1rem;
+    padding-right: 2rem;
+}
+.boxSign{
+    display: flex;
+    flex-direction: row-reverse;
+    align-self: flex-end;
+    gap: 20px;
+}
 
+#boxSigns{
+    max-width: 20px;
+    max-height: 20px;
+    gap: 1.5em;
 }
 
 .announce{
@@ -263,12 +276,6 @@ padding: 2rem;
 
 }
 
-.boxSign{
-    display: flex;
-    gap: 1.5em;
-    
-    
-}
 .allBox {   
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 800px));
